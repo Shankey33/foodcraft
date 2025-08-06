@@ -1,0 +1,55 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
+
+.video-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.video-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 2;
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover; 
+    object-position: 0% 65%;
+}
+
+.video-container h2{
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 3;
+    animation: fadeIn 4s;
+}
+
+.video-container p{
+    position: absolute;
+    top: 45%;
+    left: 26.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 3;
+    animation: fadeIn 4s;
+}
