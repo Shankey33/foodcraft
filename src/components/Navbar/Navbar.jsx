@@ -11,16 +11,8 @@ const Navbar = () => {
         <ul className="navbar-links">
                 <li>Home</li>
                     <li style={{
-                        backgroundColor: 'tomato',
-                        color: 'white',
-                        padding: '10px 15px',
-                        borderRadius: '20px',
-                        fontSize: '16px',
-                        marginRight: '30px',
-                        alignContent: 'center',
-                        marginTop: '4px',
-                        fontFamily: 'Poppins, sans-serif'
-                }}>Sign-In</li>
+                        marginRight: "20px",
+                    }}>Sign-In</li>
         </ul>
     </div>
   )
