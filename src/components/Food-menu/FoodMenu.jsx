@@ -18,6 +18,8 @@ const FoodMenu = () => {
         return item.category === category;
     });
 
+
+
     return (
         <div className="food-menu">
             <div className="food-card">
@@ -26,7 +28,7 @@ const FoodMenu = () => {
                         return(
                             <div key={item.id} className="food-menu-card">
                                 <div className='cart-actions'>
-                                    <img className='cart-actions-img01' src={addIcon} alt="add to basket icon"/>
+                                    <img className='cart-actions-img01' src={addIcon} alt="add to basket icon" />
                                     <img className='cart-actions-img02' src={minusIcon} alt="remove from basket icon"/> 
                                 </div>
                                 <img src={item.image} alt={"Dish's name"} />
