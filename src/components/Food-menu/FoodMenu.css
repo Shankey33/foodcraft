@@ -1,0 +1,90 @@
+.food-menu{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    padding: 100px;
+    background-color: #faf9f6b1;
+}
+
+.food-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 80px;
+    padding: 60px;
+    border-radius: 1%;
+    background: rgb(255, 99, 71);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.food-menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 40px 40px 9px 9px;
+    background-color: #000000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.food-menu-card h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.food-price{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    margin-right: 10px;
+    padding: 0 0 0 20px;
+    font-weight: 900;
+}
+
+.food-desc{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 17px;
+}
+
+.cart-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+}
+
+.cart-actions img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+}
+
+.cart-actions img:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+

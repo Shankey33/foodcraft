@@ -3,16 +3,23 @@ import { useContext } from 'react'
 import './Hero.css'
 import { food_images_category } from '../../assets/food-images/assets'
 import { useState } from 'react'
+import { FoodContext } from '../../context/FoodContext.jsx'
 
 const Hero = () => {
 
 
-  const [activeCategory, setActiveCategory] = useState(null);
+  const { activeCategory, setActiveCategory } = useContext(FoodContext);
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
-    // You can add more logic here to filter food items based on the category
+    window.scrollTo({
+      top: document.querySelector('.food-menu').offsetTop, // Scroll to the top of the food menu section
+      behavior: 'smooth' // Smooth scroll effect
+    });
   };
+
+
+
 
   return (
     <div className="hero">
