@@ -1,12 +1,13 @@
 import "./Navbar.css";
 import React from 'react'
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   
     return (
     <div className="navbar">
         <div className="navbar-logo">
-            <img src="./src/assets/logo.png" alt="FoodCraft Logo" />
+            <img src={logo} alt="Logo"/>
         </div>
         <ul className="navbar-links">
                 <li>Home</li>

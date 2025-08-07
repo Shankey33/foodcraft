@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import './Hero.css'
 import { food_images_category } from '../../assets/food-images/assets'
 import { useState } from 'react'
+import heroBg from '../../assets/hero-bg.mp4';
 import { FoodContext } from '../../context/FoodContext.jsx'
 
 const Hero = () => {
@@ -24,10 +25,9 @@ const Hero = () => {
   return (
     <div className="hero">
         <div className="video-container">
+          
             
-            <video autoPlay muted loop playsInline src="/hero-bg.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+           <video autoPlay muted loop playsInline src={heroBg} />
             
             <h2>Order your favourite food now!</h2>
             <p>Hygenic, Delicious and Freshly cooked dishes straight to your doorsteps</p>
